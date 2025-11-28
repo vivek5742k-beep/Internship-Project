@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internship Web Project</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <h2 class="logo">ApexPlanet</h2>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <h1>Welcome to my Internship Project</h1>
+        <p>Responsive Website Built Using HTML, CSS & JavaScript</p>
+        <button onclick="showMessage()">Click Me</button>
+        <p id="msg"></p>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <h2>Project Features</h2>
+        <div class="card-container">
+            <div class="card">
+                <h3>HTML</h3>
+                <p>Structured the content using semantic tags.</p>
+            </div>
+
+            <div class="card">
+                <h3>CSS</h3>
+                <p>Styled and made the site responsive using Flexbox & Grid.</p>
+            </div>
+
+            <div class="card">
+                <h3>JavaScript</h3>
+                <p>Added interactivity with DOM manipulation and validation.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <form id="contactForm" onsubmit="return validateForm()">
+            <input type="text" id="name" placeholder="Enter your name">
+            <input type="email" id="email" placeholder="Enter your email">
+            <textarea id="message" placeholder="Enter your message"></textarea>
+            <button type="submit">Submit</button>
+        </form>
+        <p id="form-status"></p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
